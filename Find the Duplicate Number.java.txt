@@ -1,0 +1,143 @@
+
+//Find the Duplicate Number
+
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.Arrays;
+
+public class FindDuplicate {
+
+
+    public static void main(String[] args) {
+
+
+        System.out.println("*** Checking Machine security system, for duplicate tickets ***" + "\n");
+
+
+        Set<Integer> stickerSet1 = new HashSet<>(Arrays.asList(1, 3, 4, 2, 2));
+        ArrayList<Integer> stickerArray1 = new ArrayList<>(Arrays.asList(1, 3, 4, 2, 2));
+
+
+        Set<Integer> stickerSet2 = new HashSet<>(Arrays.asList(3, 1, 3, 4, 2));
+        ArrayList<Integer> stickerArray2 = new ArrayList<>(Arrays.asList(3, 1, 3, 4, 2));
+
+        Set<Integer> stickerSet3 = new HashSet<>(Arrays.asList(1, 1));
+        ArrayList<Integer> stickerArray3 = new ArrayList<>(Arrays.asList(1,1));
+
+
+        Set<Integer> stickerSet4 = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 1));
+        ArrayList<Integer> stickerArray4 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 1));
+
+        Set<Integer> stickerSet5 = new HashSet<>(Arrays.asList(9, 6, 4, 2, 3, 5, 7, 0, 1, 8, 6));
+        ArrayList<Integer> stickerArray5 = new ArrayList<>(Arrays.asList(9, 6, 4, 2, 3, 5, 7, 0, 1, 8, 6));
+
+
+
+
+
+           System.out.println("**** The first sticker pile ****"+"\n");
+
+            if (stickerArray1.size() > stickerSet1.size()) {
+
+                
+                for (Integer i : stickerArray1) {
+                    System.out.println("ticket number: "+ i +" has ==> "+ Collections.frequency(stickerArray1, i)+
+                            " ticket copy");
+                }
+
+            }
+            else {
+
+                System.out.println("There is no duplicate ticket ");
+            }
+
+
+            System.out.println("=============================================================================="+"\n");
+
+
+            System.out.println("**** The second sticker pile ****"+"\n");
+
+            if(stickerArray2.size() > stickerSet2.size()){
+
+                for(Integer j : stickerArray2){
+
+                    System.out.println("ticket number: "+ j +" has ==> "+ Collections.frequency(stickerArray2, j)+
+                            " ticket copy");
+                }
+            }
+
+            else {
+
+                System.out.println("There is no duplication");
+            }
+
+
+            System.out.println("======================================================================"+"\n");
+
+                System.out.println("**** The third sticker pile ****"+"\n");
+
+
+        if(stickerArray3.size() > stickerSet3.size()){
+
+            for(Integer r : stickerArray3){
+
+                System.out.println("ticket number: "+ r +" has ==> "+ Collections.frequency(stickerArray3, r)+
+                        " ticket copy");
+            }
+        }
+
+        else {
+
+            System.out.println("There is no duplication");
+        }
+
+        System.out.println("==============================================================================="+"\n");
+
+
+        System.out.println("**** The fourth sticker pile ****"+"\n");
+
+
+
+        if(stickerArray4.size() > stickerSet4.size()){
+
+            for(Integer m : stickerArray4){
+
+                System.out.println("ticket number: "+ m +" has ==> "+ Collections.frequency(stickerArray4, m)+
+                        " ticket copy");
+            }
+        }
+
+        else {
+
+            System.out.println("There is no duplication");
+        }
+
+        System.out.println("====================================================================================="+"\n");
+
+
+
+               System.out.println("**** The fifth sticker pile ****"+"\n");
+
+
+        if(stickerArray5.size() > stickerSet5.size()){
+
+            for(Integer p : stickerArray5){
+
+                System.out.println("ticket number: "+ p +" has ==> "+ Collections.frequency(stickerArray5, p)+
+                        " ticket copy");
+            }
+        }
+
+        else {
+
+            System.out.println("There is no duplication");
+        }
+
+
+
+
+        }
+
+
+        }
+
